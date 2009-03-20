@@ -2,7 +2,7 @@
 %define plugin	menuorg
 %define name	vdr-plugin-%plugin
 %define version	0.4.3
-%define rel	2
+%define rel	3
 
 Summary:	VDR plugin: Reorganizes the main menu
 Name:		%name
