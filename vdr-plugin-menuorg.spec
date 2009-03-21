@@ -13,6 +13,7 @@ License:	GPLv2+
 URL:		http://www.e-tobi.net/blog/pages/vdr-menuorg/
 Source:		http://www.e-tobi.net/blog/files/vdr-%plugin-%version.tar.gz
 Source1:	menuorg.xml.minimum
+Patch0:		menuorg-includes.patch
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	vdr-devel >= 1.6.0
 BuildRequires:	libxml++-devel
@@ -26,6 +27,7 @@ on the format used by the setup plug-in.
 
 %prep
 %setup -q -n %plugin-%version
+%patch0 -p1
 %vdr_plugin_prep
 
 sed -i 's,/var/lib/vdr/plugins,%{_vdr_plugin_cfgdir},' README
