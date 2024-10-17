@@ -10,7 +10,7 @@ Version:	%version
 Release:	%mkrel %rel
 Group:		Video
 License:	GPLv2+
-URL:		http://www.e-tobi.net/blog/pages/vdr-menuorg/
+URL:		https://www.e-tobi.net/blog/pages/vdr-menuorg/
 Source:		http://www.e-tobi.net/blog/files/vdr-%plugin-%version.tar.gz
 Source1:	menuorg.xml.minimum
 BuildRoot:	%{_tmppath}/%{name}-buildroot
